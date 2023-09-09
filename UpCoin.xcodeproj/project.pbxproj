@@ -9,14 +9,51 @@
 /* Begin PBXBuildFile section */
 		3425D9B82AA769CA00CC4EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425D9B72AA769CA00CC4EE8 /* AppDelegate.swift */; };
 		3425D9BA2AA769CA00CC4EE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425D9B92AA769CA00CC4EE8 /* SceneDelegate.swift */; };
-		3425D9BC2AA769CA00CC4EE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425D9BB2AA769CA00CC4EE8 /* ViewController.swift */; };
-		3425D9BF2AA769CA00CC4EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3425D9BD2AA769CA00CC4EE8 /* Main.storyboard */; };
 		3425D9C22AA769CA00CC4EE8 /* UpCoin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3425D9C02AA769CA00CC4EE8 /* UpCoin.xcdatamodeld */; };
 		3425D9C42AA769CC00CC4EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3425D9C32AA769CC00CC4EE8 /* Assets.xcassets */; };
 		3425D9C72AA769CC00CC4EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3425D9C52AA769CC00CC4EE8 /* LaunchScreen.storyboard */; };
 		3425D9D22AA769CD00CC4EE8 /* UpCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425D9D12AA769CD00CC4EE8 /* UpCoinTests.swift */; };
 		3425D9DC2AA769CD00CC4EE8 /* UpCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425D9DB2AA769CD00CC4EE8 /* UpCoinUITests.swift */; };
 		3425D9DE2AA769CD00CC4EE8 /* UpCoinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425D9DD2AA769CD00CC4EE8 /* UpCoinUITestsLaunchTests.swift */; };
+		3425DA132AA784DA00CC4EE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA122AA784DA00CC4EE8 /* HomeViewController.swift */; };
+		3425DA202AA7859300CC4EE8 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA1B2AA7859300CC4EE8 /* Nameable.swift */; };
+		3425DA212AA7859300CC4EE8 /* CandleAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA1C2AA7859300CC4EE8 /* CandleAPIType.swift */; };
+		3425DA242AA785AE00CC4EE8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA232AA785AE00CC4EE8 /* Network.swift */; };
+		3425DA2A2AA785F000CC4EE8 /* CandleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA262AA785F000CC4EE8 /* CandleData.swift */; };
+		3425DA2B2AA785F000CC4EE8 /* WebsocketTickerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA272AA785F000CC4EE8 /* WebsocketTickerResponse.swift */; };
+		3425DA2C2AA785F000CC4EE8 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA282AA785F000CC4EE8 /* Market.swift */; };
+		3425DA2D2AA785F000CC4EE8 /* TickerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA292AA785F000CC4EE8 /* TickerResponse.swift */; };
+		3425DA742AA7892500CC4EE8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA142AA784E500CC4EE8 /* HomeViewModel.swift */; };
+		347BFD0D2AA99C10008CF85F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD0C2AA99C10008CF85F /* RxCocoa */; };
+		347BFD0F2AA99C10008CF85F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD0E2AA99C10008CF85F /* RxSwift */; };
+		347BFD142AA99C2A008CF85F /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD132AA99C2A008CF85F /* DGCharts */; };
+		347BFD172AA99C41008CF85F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD162AA99C41008CF85F /* Alamofire */; };
+		347BFD1A2AA99C86008CF85F /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD192AA99C86008CF85F /* Starscream */; };
+		347BFD222AA9AE95008CF85F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425DA412AA7873200CC4EE8 /* WidgetKit.framework */; };
+		347BFD232AA9AE95008CF85F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425DA432AA7873200CC4EE8 /* SwiftUI.framework */; };
+		347BFD262AA9AE95008CF85F /* UpCoinWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD252AA9AE95008CF85F /* UpCoinWidgetBundle.swift */; };
+		347BFD2A2AA9AE95008CF85F /* UpCoinWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD292AA9AE95008CF85F /* UpCoinWidget.swift */; };
+		347BFD2D2AA9AE96008CF85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347BFD2C2AA9AE96008CF85F /* Assets.xcassets */; };
+		347BFD2F2AA9AE96008CF85F /* UpCoinWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD2B2AA9AE95008CF85F /* UpCoinWidget.intentdefinition */; };
+		347BFD302AA9AE96008CF85F /* UpCoinWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD2B2AA9AE95008CF85F /* UpCoinWidget.intentdefinition */; };
+		347BFD332AA9AE96008CF85F /* UpCoinWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 347BFD212AA9AE95008CF85F /* UpCoinWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		347BFD3A2AA9AFF5008CF85F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD392AA9AFF5008CF85F /* RxCocoa */; };
+		347BFD3C2AA9AFFA008CF85F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD3B2AA9AFFA008CF85F /* RxSwift */; };
+		347BFD3E2AA9B006008CF85F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD3D2AA9B006008CF85F /* Alamofire */; };
+		347BFD442AA9B84A008CF85F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD432AA9B84A008CF85F /* RxRelay */; };
+		347BFD482AA9BB5F008CF85F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD472AA9BB5F008CF85F /* CoreDataManager.swift */; };
+		347BFD4A2AA9BB80008CF85F /* UpbitAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD492AA9BB80008CF85F /* UpbitAPIManager.swift */; };
+		347BFD4C2AA9BBA8008CF85F /* UpbitWebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD4B2AA9BBA8008CF85F /* UpbitWebSocketClient.swift */; };
+		347BFD4E2AA9BBCA008CF85F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD4D2AA9BBCA008CF85F /* HomeView.swift */; };
+		347BFD502AA9BD56008CF85F /* UpCoinWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD272AA9AE95008CF85F /* UpCoinWidgetLiveActivity.swift */; };
+		347BFD512AA9BD60008CF85F /* UpCoinWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD272AA9AE95008CF85F /* UpCoinWidgetLiveActivity.swift */; };
+		34A1E0672AA8C37600B66C17 /* BOOKMARK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E0612AA8C37500B66C17 /* BOOKMARK.swift */; };
+		34A1E0682AA8C37600B66C17 /* Double + StringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E0622AA8C37500B66C17 /* Double + StringFormatting.swift */; };
+		34A1E0692AA8C37600B66C17 /* Dictionary + StringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E0632AA8C37500B66C17 /* Dictionary + StringFormatting.swift */; };
+		34A1E06A2AA8C37600B66C17 /* Int + NumberFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E0642AA8C37500B66C17 /* Int + NumberFormatting.swift */; };
+		34A1E06B2AA8C37600B66C17 /* KRW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E0652AA8C37500B66C17 /* KRW.swift */; };
+		34A1E08E2AA8CA6D00B66C17 /* StockListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E08D2AA8CA6D00B66C17 /* StockListCell.swift */; };
+		34A1E0902AA8CA9500B66C17 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E08F2AA8CA9500B66C17 /* Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +71,33 @@
 			remoteGlobalIDString = 3425D9B32AA769CA00CC4EE8;
 			remoteInfo = UpCoin;
 		};
+		347BFD312AA9AE96008CF85F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3425D9AC2AA769CA00CC4EE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 347BFD202AA9AE95008CF85F;
+			remoteInfo = UpCoinWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		347BFD372AA9AE96008CF85F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				347BFD332AA9AE96008CF85F /* UpCoinWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3425D9B42AA769CA00CC4EE8 /* UpCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3425D9B72AA769CA00CC4EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3425D9B92AA769CA00CC4EE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3425D9BB2AA769CA00CC4EE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3425D9BE2AA769CA00CC4EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3425D9C12AA769CA00CC4EE8 /* UpCoin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UpCoin.xcdatamodel; sourceTree = "<group>"; };
 		3425D9C32AA769CC00CC4EE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3425D9C62AA769CC00CC4EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +107,35 @@
 		3425D9D72AA769CD00CC4EE8 /* UpCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3425D9DB2AA769CD00CC4EE8 /* UpCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpCoinUITests.swift; sourceTree = "<group>"; };
 		3425D9DD2AA769CD00CC4EE8 /* UpCoinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpCoinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3425DA122AA784DA00CC4EE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3425DA142AA784E500CC4EE8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3425DA1B2AA7859300CC4EE8 /* Nameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
+		3425DA1C2AA7859300CC4EE8 /* CandleAPIType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandleAPIType.swift; sourceTree = "<group>"; };
+		3425DA232AA785AE00CC4EE8 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		3425DA262AA785F000CC4EE8 /* CandleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandleData.swift; sourceTree = "<group>"; };
+		3425DA272AA785F000CC4EE8 /* WebsocketTickerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketTickerResponse.swift; sourceTree = "<group>"; };
+		3425DA282AA785F000CC4EE8 /* Market.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		3425DA292AA785F000CC4EE8 /* TickerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickerResponse.swift; sourceTree = "<group>"; };
+		3425DA412AA7873200CC4EE8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3425DA432AA7873200CC4EE8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		347BFD212AA9AE95008CF85F /* UpCoinWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UpCoinWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		347BFD252AA9AE95008CF85F /* UpCoinWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpCoinWidgetBundle.swift; sourceTree = "<group>"; };
+		347BFD272AA9AE95008CF85F /* UpCoinWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpCoinWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		347BFD292AA9AE95008CF85F /* UpCoinWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpCoinWidget.swift; sourceTree = "<group>"; };
+		347BFD2B2AA9AE95008CF85F /* UpCoinWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = UpCoinWidget.intentdefinition; sourceTree = "<group>"; };
+		347BFD2C2AA9AE96008CF85F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		347BFD2E2AA9AE96008CF85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347BFD472AA9BB5F008CF85F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		347BFD492AA9BB80008CF85F /* UpbitAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitAPIManager.swift; sourceTree = "<group>"; };
+		347BFD4B2AA9BBA8008CF85F /* UpbitWebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitWebSocketClient.swift; sourceTree = "<group>"; };
+		347BFD4D2AA9BBCA008CF85F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		34A1E0612AA8C37500B66C17 /* BOOKMARK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BOOKMARK.swift; sourceTree = "<group>"; };
+		34A1E0622AA8C37500B66C17 /* Double + StringFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double + StringFormatting.swift"; sourceTree = "<group>"; };
+		34A1E0632AA8C37500B66C17 /* Dictionary + StringFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary + StringFormatting.swift"; sourceTree = "<group>"; };
+		34A1E0642AA8C37500B66C17 /* Int + NumberFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int + NumberFormatting.swift"; sourceTree = "<group>"; };
+		34A1E0652AA8C37500B66C17 /* KRW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRW.swift; sourceTree = "<group>"; };
+		34A1E08D2AA8CA6D00B66C17 /* StockListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListCell.swift; sourceTree = "<group>"; };
+		34A1E08F2AA8CA9500B66C17 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +143,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347BFD1A2AA99C86008CF85F /* Starscream in Frameworks */,
+				347BFD0F2AA99C10008CF85F /* RxSwift in Frameworks */,
+				347BFD142AA99C2A008CF85F /* DGCharts in Frameworks */,
+				347BFD172AA99C41008CF85F /* Alamofire in Frameworks */,
+				347BFD0D2AA99C10008CF85F /* RxCocoa in Frameworks */,
+				347BFD442AA9B84A008CF85F /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +166,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		347BFD1E2AA9AE95008CF85F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347BFD3E2AA9B006008CF85F /* Alamofire in Frameworks */,
+				347BFD3A2AA9AFF5008CF85F /* RxCocoa in Frameworks */,
+				347BFD232AA9AE95008CF85F /* SwiftUI.framework in Frameworks */,
+				347BFD3C2AA9AFFA008CF85F /* RxSwift in Frameworks */,
+				347BFD222AA9AE95008CF85F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +187,8 @@
 				3425D9B62AA769CA00CC4EE8 /* UpCoin */,
 				3425D9D02AA769CD00CC4EE8 /* UpCoinTests */,
 				3425D9DA2AA769CD00CC4EE8 /* UpCoinUITests */,
+				347BFD242AA9AE95008CF85F /* UpCoinWidget */,
+				3425DA402AA7873200CC4EE8 /* Frameworks */,
 				3425D9B52AA769CA00CC4EE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +199,7 @@
 				3425D9B42AA769CA00CC4EE8 /* UpCoin.app */,
 				3425D9CD2AA769CD00CC4EE8 /* UpCoinTests.xctest */,
 				3425D9D72AA769CD00CC4EE8 /* UpCoinUITests.xctest */,
+				347BFD212AA9AE95008CF85F /* UpCoinWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,13 +207,13 @@
 		3425D9B62AA769CA00CC4EE8 /* UpCoin */ = {
 			isa = PBXGroup;
 			children = (
-				3425D9B72AA769CA00CC4EE8 /* AppDelegate.swift */,
-				3425D9B92AA769CA00CC4EE8 /* SceneDelegate.swift */,
-				3425D9BB2AA769CA00CC4EE8 /* ViewController.swift */,
-				3425D9BD2AA769CA00CC4EE8 /* Main.storyboard */,
-				3425D9C32AA769CC00CC4EE8 /* Assets.xcassets */,
-				3425D9C52AA769CC00CC4EE8 /* LaunchScreen.storyboard */,
-				3425D9C82AA769CC00CC4EE8 /* Info.plist */,
+				3425DA082AA783A400CC4EE8 /* App */,
+				3425DA092AA783F300CC4EE8 /* Assets */,
+				3425DA0F2AA7848E00CC4EE8 /* Model */,
+				3425DA0A2AA7845D00CC4EE8 /* Manager */,
+				3425DA0B2AA7846600CC4EE8 /* Network Layer */,
+				3425DA0C2AA7846C00CC4EE8 /* Presenter */,
+				3425DA0E2AA7847800CC4EE8 /* Util */,
 				3425D9C02AA769CA00CC4EE8 /* UpCoin.xcdatamodeld */,
 			);
 			path = UpCoin;
@@ -130,6 +236,134 @@
 			path = UpCoinUITests;
 			sourceTree = "<group>";
 		};
+		3425DA082AA783A400CC4EE8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3425D9B72AA769CA00CC4EE8 /* AppDelegate.swift */,
+				3425D9B92AA769CA00CC4EE8 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3425DA092AA783F300CC4EE8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3425D9C32AA769CC00CC4EE8 /* Assets.xcassets */,
+				3425D9C52AA769CC00CC4EE8 /* LaunchScreen.storyboard */,
+				3425D9C82AA769CC00CC4EE8 /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3425DA0A2AA7845D00CC4EE8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3425DA1A2AA7859300CC4EE8 /* Protocol */,
+				347BFD472AA9BB5F008CF85F /* CoreDataManager.swift */,
+				347BFD492AA9BB80008CF85F /* UpbitAPIManager.swift */,
+				347BFD4B2AA9BBA8008CF85F /* UpbitWebSocketClient.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3425DA0B2AA7846600CC4EE8 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				3425DA232AA785AE00CC4EE8 /* Network.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		3425DA0C2AA7846C00CC4EE8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3425DA112AA784AC00CC4EE8 /* Common */,
+				3425DA102AA784A800CC4EE8 /* Home */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3425DA0E2AA7847800CC4EE8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				34A1E0612AA8C37500B66C17 /* BOOKMARK.swift */,
+				34A1E0632AA8C37500B66C17 /* Dictionary + StringFormatting.swift */,
+				34A1E0622AA8C37500B66C17 /* Double + StringFormatting.swift */,
+				34A1E0642AA8C37500B66C17 /* Int + NumberFormatting.swift */,
+				34A1E0652AA8C37500B66C17 /* KRW.swift */,
+				34A1E08F2AA8CA9500B66C17 /* Identifiable.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3425DA0F2AA7848E00CC4EE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3425DA252AA785C900CC4EE8 /* Entity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3425DA102AA784A800CC4EE8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				347BFD4D2AA9BBCA008CF85F /* HomeView.swift */,
+				3425DA122AA784DA00CC4EE8 /* HomeViewController.swift */,
+				3425DA142AA784E500CC4EE8 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3425DA112AA784AC00CC4EE8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				34A1E08D2AA8CA6D00B66C17 /* StockListCell.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3425DA1A2AA7859300CC4EE8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3425DA1B2AA7859300CC4EE8 /* Nameable.swift */,
+				3425DA1C2AA7859300CC4EE8 /* CandleAPIType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3425DA252AA785C900CC4EE8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3425DA262AA785F000CC4EE8 /* CandleData.swift */,
+				3425DA282AA785F000CC4EE8 /* Market.swift */,
+				3425DA292AA785F000CC4EE8 /* TickerResponse.swift */,
+				3425DA272AA785F000CC4EE8 /* WebsocketTickerResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3425DA402AA7873200CC4EE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3425DA412AA7873200CC4EE8 /* WidgetKit.framework */,
+				3425DA432AA7873200CC4EE8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		347BFD242AA9AE95008CF85F /* UpCoinWidget */ = {
+			isa = PBXGroup;
+			children = (
+				347BFD252AA9AE95008CF85F /* UpCoinWidgetBundle.swift */,
+				347BFD272AA9AE95008CF85F /* UpCoinWidgetLiveActivity.swift */,
+				347BFD292AA9AE95008CF85F /* UpCoinWidget.swift */,
+				347BFD2B2AA9AE95008CF85F /* UpCoinWidget.intentdefinition */,
+				347BFD2C2AA9AE96008CF85F /* Assets.xcassets */,
+				347BFD2E2AA9AE96008CF85F /* Info.plist */,
+			);
+			path = UpCoinWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,12 +374,22 @@
 				3425D9B02AA769CA00CC4EE8 /* Sources */,
 				3425D9B12AA769CA00CC4EE8 /* Frameworks */,
 				3425D9B22AA769CA00CC4EE8 /* Resources */,
+				347BFD372AA9AE96008CF85F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				347BFD322AA9AE96008CF85F /* PBXTargetDependency */,
 			);
 			name = UpCoin;
+			packageProductDependencies = (
+				347BFD0C2AA99C10008CF85F /* RxCocoa */,
+				347BFD0E2AA99C10008CF85F /* RxSwift */,
+				347BFD132AA99C2A008CF85F /* DGCharts */,
+				347BFD162AA99C41008CF85F /* Alamofire */,
+				347BFD192AA99C86008CF85F /* Starscream */,
+				347BFD432AA9B84A008CF85F /* RxRelay */,
+			);
 			productName = UpCoin;
 			productReference = 3425D9B42AA769CA00CC4EE8 /* UpCoin.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +430,28 @@
 			productReference = 3425D9D72AA769CD00CC4EE8 /* UpCoinUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		347BFD202AA9AE95008CF85F /* UpCoinWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 347BFD342AA9AE96008CF85F /* Build configuration list for PBXNativeTarget "UpCoinWidgetExtension" */;
+			buildPhases = (
+				347BFD1D2AA9AE95008CF85F /* Sources */,
+				347BFD1E2AA9AE95008CF85F /* Frameworks */,
+				347BFD1F2AA9AE95008CF85F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UpCoinWidgetExtension;
+			packageProductDependencies = (
+				347BFD392AA9AFF5008CF85F /* RxCocoa */,
+				347BFD3B2AA9AFFA008CF85F /* RxSwift */,
+				347BFD3D2AA9B006008CF85F /* Alamofire */,
+			);
+			productName = UpCoinWidgetExtension;
+			productReference = 347BFD212AA9AE95008CF85F /* UpCoinWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +473,9 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 3425D9B32AA769CA00CC4EE8;
 					};
+					347BFD202AA9AE95008CF85F = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 3425D9AF2AA769CA00CC4EE8 /* Build configuration list for PBXProject "UpCoin" */;
@@ -218,6 +487,12 @@
 				Base,
 			);
 			mainGroup = 3425D9AB2AA769CA00CC4EE8;
+			packageReferences = (
+				347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				347BFD122AA99C2A008CF85F /* XCRemoteSwiftPackageReference "Charts" */,
+				347BFD152AA99C41008CF85F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				347BFD182AA99C86008CF85F /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = 3425D9B52AA769CA00CC4EE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,6 +500,7 @@
 				3425D9B32AA769CA00CC4EE8 /* UpCoin */,
 				3425D9CC2AA769CD00CC4EE8 /* UpCoinTests */,
 				3425D9D62AA769CD00CC4EE8 /* UpCoinUITests */,
+				347BFD202AA9AE95008CF85F /* UpCoinWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -236,7 +512,6 @@
 			files = (
 				3425D9C72AA769CC00CC4EE8 /* LaunchScreen.storyboard in Resources */,
 				3425D9C42AA769CC00CC4EE8 /* Assets.xcassets in Resources */,
-				3425D9BF2AA769CA00CC4EE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +529,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		347BFD1F2AA9AE95008CF85F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347BFD2D2AA9AE96008CF85F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,10 +544,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3425D9BC2AA769CA00CC4EE8 /* ViewController.swift in Sources */,
+				347BFD4A2AA9BB80008CF85F /* UpbitAPIManager.swift in Sources */,
+				347BFD302AA9AE96008CF85F /* UpCoinWidget.intentdefinition in Sources */,
+				3425DA742AA7892500CC4EE8 /* HomeViewModel.swift in Sources */,
+				3425DA2D2AA785F000CC4EE8 /* TickerResponse.swift in Sources */,
+				34A1E0682AA8C37600B66C17 /* Double + StringFormatting.swift in Sources */,
+				3425DA132AA784DA00CC4EE8 /* HomeViewController.swift in Sources */,
+				34A1E06A2AA8C37600B66C17 /* Int + NumberFormatting.swift in Sources */,
+				34A1E08E2AA8CA6D00B66C17 /* StockListCell.swift in Sources */,
+				347BFD512AA9BD60008CF85F /* UpCoinWidgetLiveActivity.swift in Sources */,
+				347BFD4E2AA9BBCA008CF85F /* HomeView.swift in Sources */,
+				347BFD4C2AA9BBA8008CF85F /* UpbitWebSocketClient.swift in Sources */,
+				3425DA242AA785AE00CC4EE8 /* Network.swift in Sources */,
+				3425DA212AA7859300CC4EE8 /* CandleAPIType.swift in Sources */,
+				3425DA202AA7859300CC4EE8 /* Nameable.swift in Sources */,
 				3425D9C22AA769CA00CC4EE8 /* UpCoin.xcdatamodeld in Sources */,
+				34A1E0902AA8CA9500B66C17 /* Identifiable.swift in Sources */,
+				3425DA2B2AA785F000CC4EE8 /* WebsocketTickerResponse.swift in Sources */,
 				3425D9B82AA769CA00CC4EE8 /* AppDelegate.swift in Sources */,
 				3425D9BA2AA769CA00CC4EE8 /* SceneDelegate.swift in Sources */,
+				3425DA2A2AA785F000CC4EE8 /* CandleData.swift in Sources */,
+				34A1E06B2AA8C37600B66C17 /* KRW.swift in Sources */,
+				34A1E0692AA8C37600B66C17 /* Dictionary + StringFormatting.swift in Sources */,
+				3425DA2C2AA785F000CC4EE8 /* Market.swift in Sources */,
+				347BFD482AA9BB5F008CF85F /* CoreDataManager.swift in Sources */,
+				34A1E0672AA8C37600B66C17 /* BOOKMARK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +589,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		347BFD1D2AA9AE95008CF85F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347BFD502AA9BD56008CF85F /* UpCoinWidgetLiveActivity.swift in Sources */,
+				347BFD2F2AA9AE96008CF85F /* UpCoinWidget.intentdefinition in Sources */,
+				347BFD2A2AA9AE95008CF85F /* UpCoinWidget.swift in Sources */,
+				347BFD262AA9AE95008CF85F /* UpCoinWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,17 +613,14 @@
 			target = 3425D9B32AA769CA00CC4EE8 /* UpCoin */;
 			targetProxy = 3425D9D82AA769CD00CC4EE8 /* PBXContainerItemProxy */;
 		};
+		347BFD322AA9AE96008CF85F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 347BFD202AA9AE95008CF85F /* UpCoinWidgetExtension */;
+			targetProxy = 347BFD312AA9AE96008CF85F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3425D9BD2AA769CA00CC4EE8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3425D9BE2AA769CA00CC4EE8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3425D9C52AA769CC00CC4EE8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -323,6 +635,7 @@
 		3425D9DF2AA769CD00CC4EE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -374,6 +687,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -383,6 +697,7 @@
 		3425D9E02AA769CD00CC4EE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -427,6 +742,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -437,16 +753,17 @@
 		3425D9E22AA769CD00CC4EE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M79928L8PF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UpCoin/Info.plist;
+				INFOPLIST_FILE = UpCoin/Assets/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,16 +782,17 @@
 		3425D9E32AA769CD00CC4EE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M79928L8PF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UpCoin/Info.plist;
+				INFOPLIST_FILE = UpCoin/Assets/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -566,6 +884,60 @@
 			};
 			name = Release;
 		};
+		347BFD352AA9AE96008CF85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M79928L8PF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UpCoinWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UpCoinWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oguuk.UpCoin.UpCoinWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		347BFD362AA9AE96008CF85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M79928L8PF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UpCoinWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UpCoinWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oguuk.UpCoin.UpCoinWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -605,7 +977,99 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		347BFD342AA9AE96008CF85F /* Build configuration list for PBXNativeTarget "UpCoinWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347BFD352AA9AE96008CF85F /* Debug */,
+				347BFD362AA9AE96008CF85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		347BFD122AA99C2A008CF85F /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		347BFD152AA99C41008CF85F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		347BFD182AA99C86008CF85F /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		347BFD0C2AA99C10008CF85F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		347BFD0E2AA99C10008CF85F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		347BFD132AA99C2A008CF85F /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD122AA99C2A008CF85F /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		347BFD162AA99C41008CF85F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD152AA99C41008CF85F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		347BFD192AA99C86008CF85F /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD182AA99C86008CF85F /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		347BFD392AA9AFF5008CF85F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		347BFD3B2AA9AFFA008CF85F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		347BFD3D2AA9B006008CF85F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD152AA99C41008CF85F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		347BFD432AA9B84A008CF85F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3425D9C02AA769CA00CC4EE8 /* UpCoin.xcdatamodeld */ = {
