@@ -2,7 +2,7 @@
 //  UpCoinWidget.swift
 //  UpCoinWidget
 //
-//  Created by oguuk on 2023/09/05.
+//  Created by oguuk on 2023/09/07.
 //
 
 import WidgetKit
@@ -48,7 +48,6 @@ struct UpCoinWidgetEntryView : View {
     }
 }
 
-@main
 struct UpCoinWidget: Widget {
     let kind: String = "UpCoinWidget"
 
