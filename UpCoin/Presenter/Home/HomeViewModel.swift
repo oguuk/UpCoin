@@ -43,8 +43,13 @@ final class HomeViewModel {
                 if text.isEmpty {
                     return self?.soketsSubject
                         .map { stocksDict -> [TickerResponse] in
-                            return stocksDict.values.sorted { $0.code < $1.code }
-                            .compactMap { $0.toTickerResponse() }
+                            return stocksDict.values
+                                .sorted { $0.code < $1.code }
+                                .compactMap { $0.toTickerResponse() }
+                        }
+                        .catch { error in
+                            return Observable.just([])
+                            
                         } ?? .empty()
                 } else {
                     self?.searchStocks(coinName: text)
@@ -80,10 +85,7 @@ final class HomeViewModel {
     
     func bookmark(market: String) {
         if !isBookmark(market: market) {
-            if CoreDataManager.default.count(forEntityName: "BOOKMARK") > 5 {
-                print("5개를 초과합니다.")
-                return
-            }
+            if CoreDataManager.default.count(forEntityName: "BOOKMARK") > 5 { return }
             guard let datas = CoreDataManager.default.fetch(type: KRW.self, name: market),
                   let data = datas.first else { return }
             let marketValue = Market(market: data.market!, koreanName: data.koreanName!, englishName: data.englishName!)
@@ -123,7 +125,7 @@ final class HomeViewModel {
         guard let observables = (CoreDataManager.default
             .fetch(type: KRW.self, name: coinName)?
             .map { (krw) -> Observable<[TickerResponse]?> in
-                upbit.fetchTicker(markets: krw.Market ?? "")
+                UpbitAPIManager.default.fetchTicker(marketCode: krw.Market ?? "")
             }) else { return }
         
         Observable.combineLatest(observables)
