@@ -39,6 +39,15 @@ struct Provider: IntentTimelineProvider {
             }
         }
     }
+    
+    private func getPrice(_ completion: @escaping (TickerResponse) -> ()) {
+        guard let url = URL(string: "https://api.upbit.com/v1/ticker?markets=KRW-BTC") else { return }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data,
+                  let ticker = try? JSONDecoder().decode([TickerResponse].self, from: data) else { return }
+            completion(ticker.first!)
+        }
+        .resume()
     }
 }
 
