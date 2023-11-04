@@ -33,8 +33,8 @@ final class HomeViewController: UIViewController, UIScrollViewDelegate {
         )
         let output = viewModel.transform(input: input)
         
-        output.stocks
-            .drive(homeView.tableView.rx.items) { [weak self] tableView, index, item in
+        output.coins
+            .bind(to: homeView.tableView.rx.items) { [weak self] tableView, index, item in
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: StockListCell.identifier, for: IndexPath(row: index, section: 0)) as? StockListCell else { return UITableViewCell() }
                 cell.configure(ticker: item)
                 cell.configureCandleImage(ticker: item)

@@ -20,6 +20,7 @@ final class HomeViewModel {
     
     struct Output {
         let stocks: Driver<[TickerResponse]> //Observable<[SectionModel<String, WebsocketTickerResponse>]>
+        let coins: Observable<[TickerResponse]> //Observable<[SectionModel<String, WebsocketTickerResponse>]>
     }
     
     private let upbit: UpbitAPIManager = UpbitAPIManager()
