@@ -29,13 +29,16 @@ struct Provider: IntentTimelineProvider {
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
-            entries.append(entry)
+            getPrice { ticker in
+                let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+                let color: Color = ticker.signedChangePrice > 0.0 ? .green : (ticker.signedChangePrice == 0.0 ? .gray : .pink)
+                let entry = SimpleEntry(date: entryDate, bitcoinPrice: ticker.tradePrice, color: color)
+                entries.append(entry)
+                let timeline = Timeline(entries: entries, policy: .atEnd)
+                completion(timeline)
+            }
         }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+    }
     }
 }
 
