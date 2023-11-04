@@ -40,9 +40,56 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .disposed(by: disposeBag)
         return true
     }
+    
+    func scheduleAppRefresh() {
+        let request = BGProcessingTaskRequest(identifier: "oguuk.UpCoin.process")
+        request.requiresNetworkConnectivity = true // we need internet
+        request.requiresExternalPower = false // Don't need device charging
+        
+        request.earliestBeginDate = Date(timeIntervalSinceNow: 5) // 5초 후
+        do {
+            try BGTaskScheduler.shared.submit(request)
+        } catch {
+            print("BGTask 백그라운드 작업 예약에 실패했습니다: \(error)")
+        }
+    }
+    
+    func handleAppProcess(task: BGProcessingTask) {
+        scheduleAppRefresh() // 다음 작업 예약
+        
+        guard let bookmarks: [BOOKMARK] = CoreDataManager.default.fetch(type: BOOKMARK.self) else {
+            task.setTaskCompleted(success: false)
+            return
+        }
+        
+        let group = DispatchGroup()
+                
+        for bookmark in bookmarks {
+            guard let market = bookmark.value(forKey: "market") as? String else {
+                print("Error retrieving market from bookmark")
+                continue
+            }
+            group.enter()
+            let disposable = UpbitAPIManager.default.fetchTicker(marketCode: market)
+                .subscribe(onNext: { (result: [TickerResponse]?) in
+                    group.leave()
+                    // 위젯에 표시할 데이터로 변환하고 저장하는 코드
+                }, onError: { error in
+                    print("백그라운드 작업 중 오류 발생: \(error)")
+                    group.leave()
+                })
 
+            task.expirationHandler = {
+                disposable.dispose()
+            }
+        }
+
+        group.notify(queue: .main) {
+            task.setTaskCompleted(success: true)
+        }
+    }
+    
     // MARK: UISceneSession Lifecycle
-
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
