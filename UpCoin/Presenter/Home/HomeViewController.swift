@@ -45,6 +45,22 @@ final class HomeViewController: UIViewController, UIScrollViewDelegate {
                 return cell
             }
             .disposed(by: disposeBag)
+        
+        homeView.tableView.rx
+            .modelSelected(TickerResponse.self)
+            .subscribe(onNext: { [weak self] ticker in
+                guard let self else { return }
+                UpbitAPIManager.default.fetchCandles(kind: .day, ticker.market)
+                    .observe(on: MainScheduler.instance)
+                    .subscribe(onNext: { candleDatas in
+                        guard let candleDatas else { return }
+                        let view = ChartView(candleDatas, .day)
+                        let chartVC = ChartViewController(ticker, view)
+                        self.navigationController?.pushViewController(chartVC, animated: true)
+                    })
+                    .disposed(by: self.disposeBag)
+            })
+            .disposed(by: disposeBag)
     }
     
     private func keyboardDown() {
