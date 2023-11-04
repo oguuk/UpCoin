@@ -9,13 +9,21 @@ import UIKit
 import RxSwift
 import RxCocoa
 import CoreData
+import BackgroundTasks
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private var disposeBag = DisposeBag()
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let result = BGTaskScheduler.shared.register(forTaskWithIdentifier: "oguuk.UpCoin.process",
+                                                   using: nil) { task in
+            self.handleAppProcess(task: task as! BGProcessingTask)
+            
+        }
+        
         UpbitAPIManager().fetchUpbitTradableMarkets()
             .subscribe(onNext: { markets in
                 markets?.forEach { market in
@@ -25,6 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     default: CoreDataManager.default.save(forEntityName: "USDT", value: market)
                     }
                 }
+                
+                let sceneDelegate = UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate
+                sceneDelegate.hideSpinnerView()
             })
             .disposed(by: disposeBag)
         return true
