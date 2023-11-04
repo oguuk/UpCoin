@@ -10,8 +10,9 @@ import SwiftUI
 import Intents
 
 struct Provider: IntentTimelineProvider {
+    
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+        SimpleEntry(date: Date(), bitcoinPrice: 48000000, color: .green)
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
