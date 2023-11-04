@@ -24,6 +24,9 @@
 		3425DA2C2AA785F000CC4EE8 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA282AA785F000CC4EE8 /* Market.swift */; };
 		3425DA2D2AA785F000CC4EE8 /* TickerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA292AA785F000CC4EE8 /* TickerResponse.swift */; };
 		3425DA742AA7892500CC4EE8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA142AA784E500CC4EE8 /* HomeViewModel.swift */; };
+		343DD22A2AB2BA44005CE128 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DD2292AB2BA44005CE128 /* ChartViewController.swift */; };
+		343DD22C2AB2BA4A005CE128 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DD22B2AB2BA4A005CE128 /* ChartView.swift */; };
+		343DD22E2AB2BA50005CE128 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DD22D2AB2BA50005CE128 /* ChartViewModel.swift */; };
 		347BFD0D2AA99C10008CF85F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD0C2AA99C10008CF85F /* RxCocoa */; };
 		347BFD0F2AA99C10008CF85F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD0E2AA99C10008CF85F /* RxSwift */; };
 		347BFD142AA99C2A008CF85F /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD132AA99C2A008CF85F /* DGCharts */; };
@@ -35,18 +38,28 @@
 		347BFD2A2AA9AE95008CF85F /* UpCoinWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD292AA9AE95008CF85F /* UpCoinWidget.swift */; };
 		347BFD2D2AA9AE96008CF85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347BFD2C2AA9AE96008CF85F /* Assets.xcassets */; };
 		347BFD2F2AA9AE96008CF85F /* UpCoinWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD2B2AA9AE95008CF85F /* UpCoinWidget.intentdefinition */; };
-		347BFD302AA9AE96008CF85F /* UpCoinWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD2B2AA9AE95008CF85F /* UpCoinWidget.intentdefinition */; };
 		347BFD332AA9AE96008CF85F /* UpCoinWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 347BFD212AA9AE95008CF85F /* UpCoinWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		347BFD3A2AA9AFF5008CF85F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD392AA9AFF5008CF85F /* RxCocoa */; };
 		347BFD3C2AA9AFFA008CF85F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD3B2AA9AFFA008CF85F /* RxSwift */; };
 		347BFD3E2AA9B006008CF85F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD3D2AA9B006008CF85F /* Alamofire */; };
 		347BFD442AA9B84A008CF85F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 347BFD432AA9B84A008CF85F /* RxRelay */; };
 		347BFD482AA9BB5F008CF85F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD472AA9BB5F008CF85F /* CoreDataManager.swift */; };
-		347BFD4A2AA9BB80008CF85F /* UpbitAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD492AA9BB80008CF85F /* UpbitAPIManager.swift */; };
 		347BFD4C2AA9BBA8008CF85F /* UpbitWebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD4B2AA9BBA8008CF85F /* UpbitWebSocketClient.swift */; };
 		347BFD4E2AA9BBCA008CF85F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD4D2AA9BBCA008CF85F /* HomeView.swift */; };
 		347BFD502AA9BD56008CF85F /* UpCoinWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD272AA9AE95008CF85F /* UpCoinWidgetLiveActivity.swift */; };
-		347BFD512AA9BD60008CF85F /* UpCoinWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD272AA9AE95008CF85F /* UpCoinWidgetLiveActivity.swift */; };
+		347D28AE2AB3F20500F443A4 /* ChartView_pre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347D28AD2AB3F20500F443A4 /* ChartView_pre.swift */; };
+		347D78112ABD7247003D0621 /* Date + ISO8061.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347D78102ABD7247003D0621 /* Date + ISO8061.swift */; };
+		347DD0472AF2A1280016AF44 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347DD0462AF2A1280016AF44 /* Spinner.swift */; };
+		347E149F2AC2B1DA00158F8F /* DayAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E149E2AC2B1DA00158F8F /* DayAxisValueFormatter.swift */; };
+		347E14A42AC2B29500158F8F /* MonthAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E14A32AC2B29500158F8F /* MonthAxisValueFormatter.swift */; };
+		347EE1752AC0449F00554837 /* BackgroundTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347EE1742AC0449F00554837 /* BackgroundTaskManager.swift */; };
+		349829C72AF39D9300823BF1 /* UpbitAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD492AA9BB80008CF85F /* UpbitAPIManager.swift */; };
+		349829C82AF39EFF00823BF1 /* UpCoinWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD2B2AA9AE95008CF85F /* UpCoinWidget.intentdefinition */; };
+		349829CA2AF39F5100823BF1 /* UpCoinWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BFD272AA9AE95008CF85F /* UpCoinWidgetLiveActivity.swift */; };
+		349829CC2AF4D5E400823BF1 /* TickerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DA292AA785F000CC4EE8 /* TickerResponse.swift */; };
+		349E9FB02ABC3F98005FBDF4 /* TimeAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E9FAF2ABC3F98005FBDF4 /* TimeAxisValueFormatter.swift */; };
+		349E9FB22ABC4334005FBDF4 /* Reactive + CharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E9FB12ABC4334005FBDF4 /* Reactive + CharView.swift */; };
+		349E9FB42ABC9286005FBDF4 /* String + candleDateTimeKst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E9FB32ABC9286005FBDF4 /* String + candleDateTimeKst.swift */; };
 		34A1E0672AA8C37600B66C17 /* BOOKMARK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E0612AA8C37500B66C17 /* BOOKMARK.swift */; };
 		34A1E0682AA8C37600B66C17 /* Double + StringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E0622AA8C37500B66C17 /* Double + StringFormatting.swift */; };
 		34A1E0692AA8C37600B66C17 /* Dictionary + StringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E0632AA8C37500B66C17 /* Dictionary + StringFormatting.swift */; };
@@ -54,6 +67,8 @@
 		34A1E06B2AA8C37600B66C17 /* KRW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E0652AA8C37500B66C17 /* KRW.swift */; };
 		34A1E08E2AA8CA6D00B66C17 /* StockListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E08D2AA8CA6D00B66C17 /* StockListCell.swift */; };
 		34A1E0902AA8CA9500B66C17 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A1E08F2AA8CA9500B66C17 /* Identifiable.swift */; };
+		34AFDEA02AB35EC30034CA28 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 34AFDE9F2AB35EC30034CA28 /* RxCocoa */; };
+		34AFDEA22AB35EC80034CA28 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 34AFDEA12AB35EC80034CA28 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +133,9 @@
 		3425DA292AA785F000CC4EE8 /* TickerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickerResponse.swift; sourceTree = "<group>"; };
 		3425DA412AA7873200CC4EE8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		3425DA432AA7873200CC4EE8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		343DD2292AB2BA44005CE128 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		343DD22B2AB2BA4A005CE128 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		343DD22D2AB2BA50005CE128 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		347BFD212AA9AE95008CF85F /* UpCoinWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UpCoinWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		347BFD252AA9AE95008CF85F /* UpCoinWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpCoinWidgetBundle.swift; sourceTree = "<group>"; };
 		347BFD272AA9AE95008CF85F /* UpCoinWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpCoinWidgetLiveActivity.swift; sourceTree = "<group>"; };
@@ -129,6 +147,15 @@
 		347BFD492AA9BB80008CF85F /* UpbitAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitAPIManager.swift; sourceTree = "<group>"; };
 		347BFD4B2AA9BBA8008CF85F /* UpbitWebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitWebSocketClient.swift; sourceTree = "<group>"; };
 		347BFD4D2AA9BBCA008CF85F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		347D28AD2AB3F20500F443A4 /* ChartView_pre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView_pre.swift; sourceTree = "<group>"; };
+		347D78102ABD7247003D0621 /* Date + ISO8061.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ISO8061.swift"; sourceTree = "<group>"; };
+		347DD0462AF2A1280016AF44 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		347E149E2AC2B1DA00158F8F /* DayAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAxisValueFormatter.swift; sourceTree = "<group>"; };
+		347E14A32AC2B29500158F8F /* MonthAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthAxisValueFormatter.swift; sourceTree = "<group>"; };
+		347EE1742AC0449F00554837 /* BackgroundTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTaskManager.swift; sourceTree = "<group>"; };
+		349E9FAF2ABC3F98005FBDF4 /* TimeAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAxisValueFormatter.swift; sourceTree = "<group>"; };
+		349E9FB12ABC4334005FBDF4 /* Reactive + CharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive + CharView.swift"; sourceTree = "<group>"; };
+		349E9FB32ABC9286005FBDF4 /* String + candleDateTimeKst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + candleDateTimeKst.swift"; sourceTree = "<group>"; };
 		34A1E0612AA8C37500B66C17 /* BOOKMARK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BOOKMARK.swift; sourceTree = "<group>"; };
 		34A1E0622AA8C37500B66C17 /* Double + StringFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double + StringFormatting.swift"; sourceTree = "<group>"; };
 		34A1E0632AA8C37500B66C17 /* Dictionary + StringFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary + StringFormatting.swift"; sourceTree = "<group>"; };
@@ -163,6 +190,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AFDEA22AB35EC80034CA28 /* RxSwift in Frameworks */,
+				34AFDEA02AB35EC30034CA28 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +291,7 @@
 				347BFD472AA9BB5F008CF85F /* CoreDataManager.swift */,
 				347BFD492AA9BB80008CF85F /* UpbitAPIManager.swift */,
 				347BFD4B2AA9BBA8008CF85F /* UpbitWebSocketClient.swift */,
+				347EE1742AC0449F00554837 /* BackgroundTaskManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -277,6 +307,7 @@
 		3425DA0C2AA7846C00CC4EE8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				343DD2282AB2BA35005CE128 /* Chart */,
 				3425DA112AA784AC00CC4EE8 /* Common */,
 				3425DA102AA784A800CC4EE8 /* Home */,
 			);
@@ -286,12 +317,16 @@
 		3425DA0E2AA7847800CC4EE8 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				347E14A22AC2B27500158F8F /* AxisValueFormatter */,
 				34A1E0612AA8C37500B66C17 /* BOOKMARK.swift */,
 				34A1E0632AA8C37500B66C17 /* Dictionary + StringFormatting.swift */,
 				34A1E0622AA8C37500B66C17 /* Double + StringFormatting.swift */,
 				34A1E0642AA8C37500B66C17 /* Int + NumberFormatting.swift */,
 				34A1E0652AA8C37500B66C17 /* KRW.swift */,
 				34A1E08F2AA8CA9500B66C17 /* Identifiable.swift */,
+				349E9FB12ABC4334005FBDF4 /* Reactive + CharView.swift */,
+				349E9FB32ABC9286005FBDF4 /* String + candleDateTimeKst.swift */,
+				347D78102ABD7247003D0621 /* Date + ISO8061.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -318,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				34A1E08D2AA8CA6D00B66C17 /* StockListCell.swift */,
+				347DD0462AF2A1280016AF44 /* Spinner.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -351,6 +387,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		343DD2282AB2BA35005CE128 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				347D28AD2AB3F20500F443A4 /* ChartView_pre.swift */,
+				343DD22B2AB2BA4A005CE128 /* ChartView.swift */,
+				343DD2292AB2BA44005CE128 /* ChartViewController.swift */,
+				343DD22D2AB2BA50005CE128 /* ChartViewModel.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
 		347BFD242AA9AE95008CF85F /* UpCoinWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +409,16 @@
 				347BFD2E2AA9AE96008CF85F /* Info.plist */,
 			);
 			path = UpCoinWidget;
+			sourceTree = "<group>";
+		};
+		347E14A22AC2B27500158F8F /* AxisValueFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				347E14A32AC2B29500158F8F /* MonthAxisValueFormatter.swift */,
+				347E149E2AC2B1DA00158F8F /* DayAxisValueFormatter.swift */,
+				349E9FAF2ABC3F98005FBDF4 /* TimeAxisValueFormatter.swift */,
+			);
+			path = AxisValueFormatter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +483,10 @@
 				3425D9D92AA769CD00CC4EE8 /* PBXTargetDependency */,
 			);
 			name = UpCoinUITests;
+			packageProductDependencies = (
+				34AFDE9F2AB35EC30034CA28 /* RxCocoa */,
+				34AFDEA12AB35EC80034CA28 /* RxSwift */,
+			);
 			productName = UpCoinUITests;
 			productReference = 3425D9D72AA769CD00CC4EE8 /* UpCoinUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -544,28 +605,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				347BFD4A2AA9BB80008CF85F /* UpbitAPIManager.swift in Sources */,
-				347BFD302AA9AE96008CF85F /* UpCoinWidget.intentdefinition in Sources */,
+				349829C82AF39EFF00823BF1 /* UpCoinWidget.intentdefinition in Sources */,
 				3425DA742AA7892500CC4EE8 /* HomeViewModel.swift in Sources */,
 				3425DA2D2AA785F000CC4EE8 /* TickerResponse.swift in Sources */,
 				34A1E0682AA8C37600B66C17 /* Double + StringFormatting.swift in Sources */,
+				347DD0472AF2A1280016AF44 /* Spinner.swift in Sources */,
 				3425DA132AA784DA00CC4EE8 /* HomeViewController.swift in Sources */,
+				349E9FB42ABC9286005FBDF4 /* String + candleDateTimeKst.swift in Sources */,
+				347D28AE2AB3F20500F443A4 /* ChartView_pre.swift in Sources */,
 				34A1E06A2AA8C37600B66C17 /* Int + NumberFormatting.swift in Sources */,
 				34A1E08E2AA8CA6D00B66C17 /* StockListCell.swift in Sources */,
-				347BFD512AA9BD60008CF85F /* UpCoinWidgetLiveActivity.swift in Sources */,
 				347BFD4E2AA9BBCA008CF85F /* HomeView.swift in Sources */,
 				347BFD4C2AA9BBA8008CF85F /* UpbitWebSocketClient.swift in Sources */,
 				3425DA242AA785AE00CC4EE8 /* Network.swift in Sources */,
 				3425DA212AA7859300CC4EE8 /* CandleAPIType.swift in Sources */,
+				343DD22E2AB2BA50005CE128 /* ChartViewModel.swift in Sources */,
+				347E149F2AC2B1DA00158F8F /* DayAxisValueFormatter.swift in Sources */,
 				3425DA202AA7859300CC4EE8 /* Nameable.swift in Sources */,
+				349E9FB02ABC3F98005FBDF4 /* TimeAxisValueFormatter.swift in Sources */,
 				3425D9C22AA769CA00CC4EE8 /* UpCoin.xcdatamodeld in Sources */,
 				34A1E0902AA8CA9500B66C17 /* Identifiable.swift in Sources */,
 				3425DA2B2AA785F000CC4EE8 /* WebsocketTickerResponse.swift in Sources */,
+				343DD22A2AB2BA44005CE128 /* ChartViewController.swift in Sources */,
 				3425D9B82AA769CA00CC4EE8 /* AppDelegate.swift in Sources */,
+				347E14A42AC2B29500158F8F /* MonthAxisValueFormatter.swift in Sources */,
+				349829C72AF39D9300823BF1 /* UpbitAPIManager.swift in Sources */,
 				3425D9BA2AA769CA00CC4EE8 /* SceneDelegate.swift in Sources */,
+				347EE1752AC0449F00554837 /* BackgroundTaskManager.swift in Sources */,
 				3425DA2A2AA785F000CC4EE8 /* CandleData.swift in Sources */,
 				34A1E06B2AA8C37600B66C17 /* KRW.swift in Sources */,
+				349E9FB22ABC4334005FBDF4 /* Reactive + CharView.swift in Sources */,
+				347D78112ABD7247003D0621 /* Date + ISO8061.swift in Sources */,
 				34A1E0692AA8C37600B66C17 /* Dictionary + StringFormatting.swift in Sources */,
+				343DD22C2AB2BA4A005CE128 /* ChartView.swift in Sources */,
+				349829CA2AF39F5100823BF1 /* UpCoinWidgetLiveActivity.swift in Sources */,
 				3425DA2C2AA785F000CC4EE8 /* Market.swift in Sources */,
 				347BFD482AA9BB5F008CF85F /* CoreDataManager.swift in Sources */,
 				34A1E0672AA8C37600B66C17 /* BOOKMARK.swift in Sources */,
@@ -597,6 +670,7 @@
 				347BFD2F2AA9AE96008CF85F /* UpCoinWidget.intentdefinition in Sources */,
 				347BFD2A2AA9AE95008CF85F /* UpCoinWidget.swift in Sources */,
 				347BFD262AA9AE95008CF85F /* UpCoinWidgetBundle.swift in Sources */,
+				349829CC2AF4D5E400823BF1 /* TickerResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,8 +838,10 @@
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -773,9 +849,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = oguuk.UpCoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -793,8 +872,10 @@
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -802,9 +883,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = oguuk.UpCoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -821,9 +905,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = oguuk.UpCoinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpCoin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UpCoin";
 			};
 			name = Debug;
@@ -841,9 +928,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = oguuk.UpCoinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpCoin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UpCoin";
 			};
 			name = Release;
@@ -859,9 +949,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = oguuk.UpCoinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = UpCoin;
 			};
 			name = Debug;
@@ -877,9 +970,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = oguuk.UpCoinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = UpCoin;
 			};
 			name = Release;
@@ -907,7 +1003,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -934,7 +1030,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1068,6 +1164,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
+		};
+		34AFDE9F2AB35EC30034CA28 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		34AFDEA12AB35EC80034CA28 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347BFD0B2AA99C10008CF85F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 
