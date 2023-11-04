@@ -10,6 +10,8 @@ import RxSwift
 
 final class UpbitAPIManager {
     
+    static let `default` = UpbitAPIManager()
+    
     enum Constant {
         static let baseURL: String = "https://api.upbit.com/v1"
         static let pathOfCheckMarketCode = "/market/all"
