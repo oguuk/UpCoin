@@ -16,13 +16,15 @@ final class UpbitAPIManager {
         static let baseURL: String = "https://api.upbit.com/v1"
         static let pathOfCheckMarketCode = "/market/all"
         static let pathOfCurrentPrice = "/ticker"
+        static let pathOfCandles = "/candles"
+        static let pathOfMinutes = "/minutes"
     }
     
     private let disposeBag = DisposeBag()
     
-    func fetchTicker<T: Codable>(markets: String) -> Observable<[T]?> {
+    func fetchTicker<T: Codable>(marketCode: String) -> Observable<[T]?> {
         return Observable.create { observer in
-            let disposable = Network.default.get(url: Constant.baseURL + Constant.pathOfCurrentPrice, parameters: ["markets":markets])
+            let disposable = Network.default.get(url: Constant.baseURL + Constant.pathOfCurrentPrice, parameters: ["markets":marketCode])
                 .subscribe(onNext: { result in
                     switch result {
                     case let .success(data):
@@ -67,7 +69,6 @@ final class UpbitAPIManager {
             print("Decoding error: \(error)")
             observer.onError(error)
         }
-
     }
 }
 
