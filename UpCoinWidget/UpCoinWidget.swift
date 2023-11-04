@@ -53,14 +53,33 @@ struct Provider: IntentTimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let configuration: ConfigurationIntent
+    let bitcoinPrice: Double
+    let color: Color
 }
 
 struct UpCoinWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        
+        VStack {
+            Spacer()
+            Text(verbatim: "BitCoin")
+            Spacer()
+            Text(entry.bitcoinPrice, format: .number)
+                .font(.system(size: 18, weight: .medium))
+                .foregroundColor(entry.color)
+            Spacer()
+            HStack {
+                Text(entry.date, style: .date)
+                    .font(.system(size: 8, weight: .medium))
+                    .foregroundColor(.gray)
+                Text(entry.date, style: .time)
+                    .font(.system(size: 8, weight: .medium))
+                    .foregroundColor(.gray)
+            }
+            Spacer()
+        }
     }
 }
 
@@ -78,7 +97,7 @@ struct UpCoinWidget: Widget {
 
 struct UpCoinWidget_Previews: PreviewProvider {
     static var previews: some View {
-        UpCoinWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        UpCoinWidgetEntryView(entry: SimpleEntry(date: Date(), bitcoinPrice: 48000000, color: .green))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
