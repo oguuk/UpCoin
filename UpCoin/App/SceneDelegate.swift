@@ -11,15 +11,26 @@ import RxCocoa
 import CoreData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
+    private var spinnerView: SpinnerView?
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let homeVC = HomeViewController()
+        let navigationController = UINavigationController(rootViewController: homeVC)
         window = UIWindow(windowScene: windowScene)
-        let vc = HomeViewController()
-        window?.rootViewController = vc
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        
+        spinnerView = SpinnerView(frame: window?.bounds ?? .infinite)
+        self.window?.addSubview(spinnerView!)
+    }
+    
+    func hideSpinnerView() {
+        spinnerView?.removeFromSuperview()
+        spinnerView = nil
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
