@@ -55,6 +55,49 @@ final class UpbitAPIManager {
         }
     }
     
+    func fetchCandles(kind: CandleAPIType, _ marketCode: String, _ to: String? = nil) -> Observable<[CandleData]?> {
+        var param = to == nil ? ["market" : marketCode, "count" : 200] : ["market" : marketCode, "count" : 200, "to" : to!]
+        return Observable.create { observer in
+            let disposable = Network.default
+                .get(url: Constant.baseURL + Constant.pathOfCandles + kind.rawValue,
+                     parameters: param)
+                .subscribe(onNext: { result in
+                    switch result {
+                    case let .success(data):
+                        self.handleSuccess(data: data, observer: observer)
+                    case let .failure(error):
+                        print("\(marketCode) error \(error.localizedDescription)")
+                        observer.onError(error)
+                    }
+                })
+            
+            return Disposables.create { disposable.dispose() }
+        }
+        
+    }
+    
+    func fetchCandles(_ minutes: AvailableMinutesUnit,  _ marketCode: String, _ to: String? = nil) -> Observable<[CandleData]?> {
+        return Observable.create { observer in
+            let urlString = Constant.baseURL + Constant.pathOfCandles + Constant.pathOfMinutes + minutes.rawValue
+            var param = to == nil ? ["market" : marketCode, "count" : 200] : ["market" : marketCode, "count" : 200, "to" : to!]
+            let disposable = Network.default
+                .get(url: urlString,
+                     parameters: param)
+                .subscribe(onNext: { result in
+                    switch result {
+                    case let .success(data):
+                        self.handleSuccess(data: data, observer: observer)
+                    case let .failure(error):
+                        print("\(marketCode) error \(error.localizedDescription)")
+                        observer.onError(error)
+                    }
+                })
+            
+            return Disposables.create { disposable.dispose() }
+        }
+        
+    }
+    
     private func handleSuccess<T: Codable>(data: Data?, observer: AnyObserver<[T]?>) {
         guard let data = data else {
             observer.onError(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Data is nil"]))
