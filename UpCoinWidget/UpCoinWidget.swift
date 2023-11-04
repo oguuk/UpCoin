@@ -16,8 +16,11 @@ struct Provider: IntentTimelineProvider {
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
-        completion(entry)
+        getPrice { ticker in
+            let color: Color = ticker.signedChangePrice > 0.0 ? .green : (ticker.signedChangePrice == 0.0 ? .gray : .pink)
+            let entry = SimpleEntry(date: Date(), bitcoinPrice: ticker.tradePrice, color: color)
+            completion(entry)
+        }
     }
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
